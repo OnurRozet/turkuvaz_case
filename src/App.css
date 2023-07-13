@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col{
+  width: calc(25% - 10px); /* Her bir div'in genişliği 25% olacak */
+  margin-bottom: 20px; /* Alt boşluk bırakır */
+  
+
+}
+.col:last-child {
+  margin-right: 0; /* Son div'e sağdan boşluk bırakmaz */
+}
+.col div {
+  height: 100%; /* İçerikleri yükseklik olarak doldurur */
 }
 
-.App-link {
-  color: #61dafb;
+.mt{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image1Div{
+  display: flex;
+  flex-wrap: wrap;
+
 }
+
+.image1Content{
+  
+  width: 330px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 693px;
+
+}
+
+.image1Content img{
+  width: 100%;
+  height: 450px;
+  border-radius: 5px;
+}
+
+
+.image2Div{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.image2Content{
+  
+  width: 220px;
+  border: 1px  lightgray;
+  border-radius: 5px;
+
+}
+
+.image2Content img{
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.image3Div{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+ 
+}
+
+.image3Content{
+  
+  width: 600px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+
+}
+
+.image3Content img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-title{
+  padding: 20px;
+
+}
+
+.extraContent-title{
+  padding: 10px;
+}
+
+.extraContent-title a{
+  text-decoration: none;
+  color: black;
+}
+
+.card-title a{
+  text-decoration: none;
+  color: black;
+}
+
+.image3-container {
+  position: absolute;
+  top: 250px; /* Adjust the top value according to your desired position */
+  left: 360px; /* Adjust the left value according to your desired position */
+}
+
+
